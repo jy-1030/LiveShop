@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ic_house"
+        android:icon="@drawable/ic_home"
+        android:title="">
+    </item>
+
+
+    <item
+        android:id="@+id/ic_search"
+        android:icon="@drawable/ic_store"
+        android:title="">
+    </item>
+
+    <item
+        android:id="@+id/ic_circle"
+        android:icon="@drawable/ic_circle"
+        android:title="">
+    </item>
+    <!--20210414 searchactivity-->
+    <item
+        android:id="@+id/ic_alert"
+        android:icon="@drawable/ic_search"
+        android:title="">
+    </item>
+    <!--20210414 searchactivity-->
+    <item
+        android:id="@+id/ic_android"
+        android:icon="@drawable/ic_personal"
+        android:title="">
+    </item>
+</menu>
+
+
+    <!--
+
+    icon home id=house
+    icon store id=search
+    icon circle id=circle
+    icon search id=alert
+    icon personal id=android
+    -->

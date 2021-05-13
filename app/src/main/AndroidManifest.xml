@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.igtest">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+<!--    <uses-feature android:name="android.hardware.type.watch" /> &lt;!&ndash; package="tabian.com.igtest"> &ndash;&gt;-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="false" />
+
+        <activity
+            android:name="tabian.com.example.igtest.Home.Payment"
+            android:label="@string/title_activity_lastpayment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="tabian.com.example.igtest.Home.AddVideoActivity" />
+        <activity android:name="tabian.com.example.igtest.Home.VideosActivity" />
+        <activity android:name="tabian.com.example.igtest.shop.MyAddressesActivity" />
+        <activity android:name="tabian.com.example.igtest.shop.AddAddressActivity" />
+        <activity android:name="tabian.com.example.igtest.shop.DeliveryActivity" />
+        <activity android:name="tabian.com.example.igtest.shop.OrderDetailsActivity" />
+        <activity android:name="tabian.com.example.igtest.shop.ProductDetailsActivity" />
+        <activity android:name="tabian.com.example.igtest.shop.category.CategoryActivity" />
+        <activity
+            android:name="tabian.com.example.igtest.shop.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="tabian.com.example.igtest.Home.HomeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name="tabian.com.example.igtest.Likes.LikesActivity" -->
+        <!-- android:launchMode="singleInstance" /> -->
+        <activity
+            android:name="tabian.com.example.igtest.Profile.ProfileActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="tabian.com.example.igtest.Share.ShareActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="tabian.com.example.igtest.Share.NextActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="tabian.com.example.igtest.Login.LoginActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="tabian.com.example.igtest.Profile.AccountSettingsActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="tabian.com.example.igtest.Login.RegisterActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="tabian.com.example.igtest.opengl.OpenGLES10Activity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="tabian.com.example.igtest.opengl.NewStoryActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="tabian.com.example.igtest.Search.SearchActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="tabian.com.example.igtest.materialcamera.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="tabian.com.example.igtest.materialcamera.CaptureActivity2"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
